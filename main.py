@@ -48,14 +48,14 @@ async def startprivate(client, message):
     joinButton = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(" MOVIES CHANNEL", url="https://t.me/B_MOVIESHUB"),
+                InlineKeyboardButton("MOVIESCHANNEL", url="https://t.me/B_MOVIESHUB"),
                 InlineKeyboardButton(
                     "BACKUP CHANNEL", url="https://t.me/ebooksind"
                 ),
             ]
         ]
     )
-    welcomed = f"Hey <b>{message.from_user.first_name}</b>\nThanks for using Me. I'll send you all new movies and webseries here, but do not delete our chats.\n\n 🎚 use /settings"
+    welcomed = f"Hey <b>{message.from_user.first_name}</b>\nThanks for using Me. I'll send you all new movies and webseries here, but do not delete our chats.\n\n Join @Ebooksind"
     await message.reply_text(welcomed, reply_markup=joinButton)
     raise StopPropagation
 
